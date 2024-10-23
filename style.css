@@ -85,10 +85,19 @@ header div a {
      background-color: #8662c7;
  }
 
+
+ main {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap; 
+   margin: 0 10px; 
+ }
+
  /* Note we can use the .card class selector here, as a class has been assigned to the <section> elements. */
 .card {
-   float: left;
-   width: calc(33% - 10px);
+   /* float: left;
+   width: calc(33% - 10px); */
+   flex-grow: 1;
    margin: 10px 5px;
    background-color: white;
  }
@@ -129,19 +138,7 @@ header div a {
    background-image: url(./images/comment.png);
  }
 
- main {
-   display: flex;
-   justify-content: space-evenly;
-   flex-wrap: wrap; 
-   margin: 0 10px; 
- }
 
- .card {
-   width: 32%; 
-   margin: 10px 0; 
-   box-sizing: border-box;
-   background-color: white;
- }
  
  @media (max-width: 768px) {
    .card {
